@@ -145,7 +145,7 @@ export default function CartDrawer() {
                   />
                   <div className="grid flex-grow gap-2">
                     <h3 className="font-medium text-sm">{item.name}</h3>
-                    <p className="text-muted-foreground text-sm">${item.price.toFixed(2)}</p>
+                    <p className="text-muted-foreground text-sm">Rs.{item.price.toFixed(2)}</p>
                     <div className="flex items-center gap-2">
                       <Button
                         variant="outline"
@@ -186,7 +186,7 @@ export default function CartDrawer() {
         <SheetFooter className="mt-4">
           <div className="flex  items-center w-full mb-4 gap-1">
             <span className="text-lg font-semibold">Total: {`  `} </span>
-            <span className="text-lg font-bold">${getTotalPrice().toFixed(2)}</span>
+            <span className="text-lg font-bold">Rs.{getTotalPrice().toFixed(2)}</span>
           </div>
           <Button
             onClick={handleProceedToCheckout}

@@ -53,7 +53,7 @@ export default function ProductCard({ product }: { product: Product }) {
           <span className="text-xs text-gray-500 ml-2">({5})</span>
         </div>
         <div className="text-xl font-bold text-green-600 dark:text-green-400">
-          ${product.price.toFixed(2)}
+          Rs.{product.price.toFixed(2)}
         </div>
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-end">

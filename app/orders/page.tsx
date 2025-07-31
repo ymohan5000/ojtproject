@@ -205,7 +205,7 @@ export default function MyOrdersPage() {
                       <Badge className={`${getStatusColor(order.status)} text-white`}>
                         {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
                       </Badge>
-                      <p className="text-lg font-bold mt-1">${order.totalPrice.toFixed(2)}</p>
+                      <p className="text-lg font-bold mt-1">Rs.{order.totalPrice.toFixed(2)}</p>
                       {order.status.toLowerCase() === "pending" && (
                         <Button
                           variant="outline"
@@ -234,12 +234,12 @@ export default function MyOrdersPage() {
                         <div className="flex-1">
                           <h5 className="font-medium">{item.product.name}</h5>
                           <p className="text-sm text-gray-600">
-                            Quantity: {item.quantity} × ${item.price.toFixed(2)}
+                            Quantity: {item.quantity} × Rs.{item.price.toFixed(2)}
                           </p>
                         </div>
                         <div className="text-right">
                           <p className="font-semibold">
-                            ${(item.quantity * item.price).toFixed(2)}
+                            Rs.{(item.quantity * item.price).toFixed(2)}
                           </p>
                         </div>
                       </div>
