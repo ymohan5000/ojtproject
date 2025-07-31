@@ -234,7 +234,7 @@ export default function ProductsPage() {
                     <h3 className="text-lg font-medium text-gray-900 truncate">{product.name}</h3>
                     <p className="text-sm text-gray-500 mt-1 truncate">{product.description}</p>
                     <div className="mt-3 flex items-center justify-between">
-                      <span className="text-lg font-bold text-gray-900">${product.price}</span>
+                      <span className="text-lg font-bold text-gray-900">RS{product.price}</span>
                       <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                         {product.category}
                       </span>
